@@ -73,6 +73,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lime);outline-offse
 .feature.flip .feature-top{flex-direction:row-reverse}
 .video{flex:0 0 300px;max-width:100%;aspect-ratio:9/16;border-radius:20px;overflow:hidden;background:var(--green);position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:22px;color:var(--white);text-decoration:none}
 .video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.video.has-media{padding:0;background:#000}
 .video .tag{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mint)}
 .video .q{font-family:var(--display);font-size:30px;line-height:1.05;font-weight:800;letter-spacing:-.02em;color:var(--lime)}
 .video .go{align-self:flex-start;background:var(--lime);color:var(--deep);font-size:15px;font-weight:800;padding:12px 18px;border-radius:999px}
@@ -93,6 +94,23 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--lime);outline-offse
 .steps .k{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
 .steps .t{font-family:var(--display);font-size:22px;line-height:1.2;font-weight:800}
 .steps .d{font-size:15px;color:var(--muted)}
+
+/* AI */
+#ai{background:var(--deep);color:var(--white)}
+#ai .eyebrow{color:var(--lime)}
+#ai .sec-head p{color:var(--mint-2)}
+#ai .sec-head .hl{white-space:nowrap}
+.ai-grid{display:grid;grid-template-columns:1fr;gap:28px 24px;margin:clamp(40px,5vw,64px) 0;padding:0;list-style:none}
+@media (min-width:640px){.ai-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.ai-grid li{display:flex;flex-direction:column;gap:10px}
+.ai-grid .video{flex:none;width:100%;max-width:340px;aspect-ratio:3/4;margin:0 auto}
+.ai-grid .t{font-family:var(--display);font-size:22px;line-height:1.2;font-weight:800}
+.ai-grid .d{font-size:15px;color:var(--mint)}
+#ai .process h3{color:var(--mint)}
+#ai .steps li{border-top-color:var(--lime)}
+#ai .steps .k{color:var(--lime)}
+#ai .steps .d{color:var(--mint)}
+.tools{margin:24px 0 0;font-size:15px;color:var(--mint)}
 
 /* Method */
 #method{background:var(--lime);color:var(--deep)}
@@ -133,6 +151,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 2
       <a class="brand" href="#top">Alexandros Ntasis</a>
       <div class="nav-links">
         <a href="#work">Work</a>
+        <a href="#ai">AI</a>
         <a href="#method">Method</a>
         <a class="cta" href="#contact">Work with me</a>
       </div>
@@ -198,12 +217,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 2
 
       <article class="feature flip">
         <div class="feature-top">
-          <!-- VIDEO SLOT: replace this link with <div class="video"><video src="videos/clearsmile.mp4" controls playsinline preload="metadata" poster="videos/clearsmile.jpg"></video></div> -->
-          <a class="video" href="https://www.facebook.com/reel/920887707089011" target="_blank" rel="noopener">
-            <span class="tag">ClearSmile · Creator ad</span>
-            <span class="q">“Does it really work?”</span>
-            <span class="go">Watch the ad ↗</span>
-          </a>
+          <div class="video has-media"><video src="videos/clearsmile-does-it-work.mp4" poster="videos/clearsmile-does-it-work.jpg" controls playsinline preload="none" aria-label="ClearSmile creator ad: Does it really work?"></video></div>
           <div class="feature-text">
             <div class="eyebrow">ClearSmile · Teeth whitening · Greece</div>
             <div class="hook">“Does it really work?”</div>
@@ -229,7 +243,44 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 2
   </div>
 </section>
 
-<!-- AI-CREATED VIDEOS section goes here once the videos are in /videos (design: "Generated, not filmed."). -->
+<section id="ai" class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <div style="flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:16px">
+        <div class="eyebrow">AI-created videos</div>
+        <h2 class="display" style="flex:none">Generated, not filmed.</h2>
+      </div>
+      <p>The angle and the hook still come first. AI changes how fast I can test them: a new version in <span class="hl">hours, not a shoot</span>.</p>
+    </div>
+    <ul class="ai-grid">
+      <li>
+        <div class="video has-media"><video src="videos/ai-ugc-owner.mp4" poster="videos/ai-ugc-owner.jpg" controls playsinline preload="none" aria-label="AI-generated UGC ad for Soft Pet Paws"></video></div>
+        <span class="t">“Okay. Last one.”</span>
+        <span class="d">Soft Pet Paws · UGC-style owner story</span>
+      </li>
+      <li>
+        <div class="video has-media"><video src="videos/ai-groomer.mp4" poster="videos/ai-groomer.jpg" controls playsinline preload="none" aria-label="AI-generated groomer ad for Soft Pet Paws"></video></div>
+        <span class="t">“I'm a groomer. Half my clients only come in for nails.”</span>
+        <span class="d">Soft Pet Paws · Expert testimonial</span>
+      </li>
+      <li>
+        <div class="video has-media"><video src="videos/ai-vet.mp4" poster="videos/ai-vet.jpg" controls playsinline preload="none" aria-label="AI-generated vet explainer ad for Soft Pet Paws"></video></div>
+        <span class="t">“So this is your dog's quick.”</span>
+        <span class="d">Soft Pet Paws · Vet explainer with animation</span>
+      </li>
+    </ul>
+    <div class="process">
+      <h3>How I make them</h3>
+      <ol class="steps">
+        <li><span class="k">1. Angle and script</span><span class="t">Written before anything is generated</span><span class="d">Same audit and angle work as a filmed ad. The script decides every shot.</span></li>
+        <li><span class="k">2. Start frame</span><span class="t">One image that sets the scene</span><span class="d">A generated still of the product and setting. I fix details by editing that image, not by starting over.</span></li>
+        <li><span class="k">3. Video</span><span class="t">Cheap drafts first, then the final</span><span class="d">Short draft clips to find what works, then the full-quality run of the one that does.</span></li>
+        <li><span class="k">4. Upscale and edit</span><span class="t">Finished like any other ad</span><span class="d">Upscaled, cut and captioned, then tested against the filmed ads on the same targets.</span></li>
+      </ol>
+      <p class="tools">Tools: Claude, Nano Banana, Seedance, Runway, Topaz, Artlist, Adobe Premiere.</p>
+    </div>
+  </div>
+</section>
 
 <section id="method" class="section">
   <div class="wrap">
