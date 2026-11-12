@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexandros Ntasis · Creative strategist and media buyer</title>
+<meta name="description" content="Creative strategist and media buyer for DTC brands. 150M+ views on ads I made. I find the angle, write the hook, make the ad and buy the media.">
+<meta property="og:title" content="Alexandros Ntasis · Creative strategist and media buyer">
+<meta property="og:description" content="150M+ views on ads I made. I find the angle, write the hook, make the ad and buy the media.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://alexntasis.com/">
+<meta name="theme-color" content="#0f5c4f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f5c4f'/%3E%3Ctext x='32' y='46' font-family='Arial,sans-serif' font-size='40' font-weight='800' text-anchor='middle' fill='%23c8ff5a'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --green:#0f5c4f; --deep:#06231e; --lime:#c8ff5a; --paper:#f3f6f4; --white:#ffffff;
+  --ink:#06231e; --muted:#3f564f; --mint:#cfe6e0; --mint-2:#dcefea; --line:#d3ded9;
+  --display:"Bricolage Grotesque",Inter,system-ui,sans-serif;
+  --body:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--lime);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+@media (min-width:720px){.wrap{padding-left:40px;padding-right:40px}}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.display{font-family:var(--display);font-weight:800;letter-spacing:-.03em;margin:0;text-wrap:balance}
+.hl{background:var(--lime);color:var(--deep);font-weight:800;padding:2px 8px;border-radius:6px}
+
+/* Hero */
+.hero{background:var(--green);color:var(--white);display:flex;flex-direction:column;min-height:min(800px,100svh)}
+.hero-main{flex:1;display:flex;flex-direction:column;justify-content:space-between;gap:40px;padding-top:24px;padding-bottom:32px}
+.nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px}
+.brand{font-family:var(--display);font-size:20px;font-weight:800;text-decoration:none}
+.nav-links{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-size:15px;font-weight:600}
+.nav-links a{text-decoration:none;padding:8px 0}
+.nav-links a:hover{color:var(--lime)}
+.nav-links .cta{background:var(--lime);color:var(--deep);padding:12px 20px;border-radius:999px;font-weight:700}
+.nav-links .cta:hover{color:var(--deep);background:#d8ff85}
+.hero-center{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px}
+.hero-center .eyebrow{color:var(--mint)}
+.big-num{font-family:var(--display);font-weight:800;letter-spacing:-.05em;line-height:.88;color:var(--lime);font-size:clamp(104px,25vw,300px)}
+.hero h1{font-size:clamp(34px,5.4vw,60px);line-height:1;letter-spacing:-.02em}
+.hero-foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:20px 28px;text-align:center}
+.hero-foot p{margin:0;font-size:19px;max-width:480px;color:var(--mint-2)}
+.btn{display:inline-block;text-decoration:none;font-weight:800;border-radius:999px;padding:16px 28px;font-size:17px;white-space:nowrap}
+.btn-white{background:var(--white);color:var(--deep)}
+.btn-white:hover{background:var(--lime)}
+.proof{background:var(--deep)}
+.proof .wrap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 24px;padding-top:22px;padding-bottom:22px}
+@media (min-width:900px){.proof .wrap{grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;padding-top:26px;padding-bottom:26px}}
+.proof div{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.proof b{font-family:var(--display);font-size:clamp(30px,4vw,40px);font-weight:800;color:var(--lime);line-height:1}
+.proof span{font-size:15px;color:var(--mint)}
+
+/* Sections */
+.section{padding-top:clamp(72px,9vw,112px);padding-bottom:clamp(72px,9vw,120px)}
+.sec-head{display:flex;flex-wrap:wrap;gap:24px 64px;align-items:flex-end}
+.sec-head h2{flex:1 1 360px;font-size:clamp(46px,7vw,72px);line-height:.95}
+.sec-head p{flex:1 1 420px;margin:0;font-size:clamp(18px,2vw,21px);line-height:1.5;font-weight:500}
+
+/* Work */
+#work .sec-head{border-bottom:2px solid var(--ink);padding-bottom:32px}
+.work-list{display:flex;flex-direction:column;gap:clamp(64px,8vw,96px);margin-top:clamp(48px,7vw,88px)}
+.feature{display:flex;flex-direction:column;gap:40px}
+.feature-top{display:flex;flex-wrap:wrap;gap:32px 56px;align-items:center}
+.feature.flip .feature-top{flex-direction:row-reverse}
+.video{flex:0 0 300px;max-width:100%;aspect-ratio:9/16;border-radius:20px;overflow:hidden;background:var(--green);position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:22px;color:var(--white);text-decoration:none}
+.video video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.video .tag{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mint)}
+.video .q{font-family:var(--display);font-size:30px;line-height:1.05;font-weight:800;letter-spacing:-.02em;color:var(--lime)}
+.video .go{align-self:flex-start;background:var(--lime);color:var(--deep);font-size:15px;font-weight:800;padding:12px 18px;border-radius:999px}
+.video:hover .go{background:var(--white)}
+@media (max-width:719px){.video{flex-basis:100%;max-width:340px;margin:0 auto}}
+.feature-text{flex:1 1 440px;min-width:0;display:flex;flex-direction:column;gap:22px}
+.feature-text .eyebrow{color:var(--green)}
+.hook{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-height:1.03;font-size:clamp(34px,5.2vw,56px);text-wrap:balance}
+.facts{display:grid;grid-template-columns:110px minmax(0,1fr);gap:12px 20px;margin:0}
+.facts dt{font-weight:700;color:var(--muted)}
+.facts dd{margin:0}
+@media (max-width:479px){.facts{grid-template-columns:1fr;gap:2px 0}.facts dd{margin-bottom:12px}}
+.process h3{margin:0 0 20px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.steps{display:grid;grid-template-columns:1fr;gap:28px;margin:0;padding:0;list-style:none}
+@media (min-width:600px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:980px){.steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.steps li{display:flex;flex-direction:column;gap:8px;border-top:3px solid var(--green);padding-top:16px}
+.steps .k{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--green)}
+.steps .t{font-family:var(--display);font-size:22px;line-height:1.2;font-weight:800}
+.steps .d{font-size:15px;color:var(--muted)}
+
+/* Method */
+#method{background:var(--lime);color:var(--deep)}
+#method .sec-head h2{flex:none;font-size:clamp(48px,8.4vw,92px);line-height:.93}
+#method .sec-head p{flex:1 1 300px}
+.cards{display:grid;grid-template-columns:1fr;gap:20px;margin:clamp(40px,5vw,56px) 0 0;padding:0;list-style:none}
+@media (min-width:640px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:980px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.cards li{background:var(--deep);color:var(--white);border-radius:20px;padding:28px 28px 32px;display:flex;flex-direction:column;gap:14px}
+.cards .n{font-family:var(--display);font-size:72px;line-height:.9;font-weight:800;letter-spacing:-.03em;color:var(--lime)}
+.cards .t{font-family:var(--display);font-size:27px;line-height:1.15;font-weight:800}
+.cards .d{font-size:16px;color:var(--mint)}
+.loop{display:flex;flex-wrap:wrap;align-items:center;gap:14px;border-top:2px solid var(--deep);margin-top:clamp(40px,5vw,56px);padding-top:22px;font-size:18px;font-weight:600}
+.loop b{background:var(--deep);color:var(--lime);font-family:var(--display);font-weight:800;padding:6px 12px;border-radius:999px;white-space:nowrap}
+
+/* Contact */
+#contact{background:var(--green);color:var(--white)}
+.contact{display:flex;flex-direction:column;align-items:center;text-align:center;gap:28px}
+.contact .eyebrow{color:var(--lime)}
+.contact h2{font-size:clamp(60px,13vw,150px);line-height:.9;letter-spacing:-.04em;color:var(--lime)}
+.contact p{margin:0;font-size:clamp(18px,2vw,21px);line-height:1.5;color:var(--mint-2);max-width:620px}
+.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.btn-lime{background:var(--lime);color:var(--deep);font-size:19px;padding:20px 34px}
+.btn-lime:hover{background:var(--white)}
+.btn-line{border:2px solid var(--white);color:var(--white);font-size:19px;padding:18px 34px}
+.btn-line:hover{background:var(--white);color:var(--deep)}
+.addr{font-size:17px;font-weight:600;color:var(--mint-2);user-select:all}
+footer{background:var(--deep);color:var(--mint);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-top:22px;padding-bottom:22px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap hero-main">
+    <nav class="nav" aria-label="Main">
+      <a class="brand" href="#top">Alexandros Ntasis</a>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#method">Method</a>
+        <a class="cta" href="#contact">Work with me</a>
+      </div>
+    </nav>
+    <div class="hero-center" id="top">
+      <div class="eyebrow">Creative strategist · Media buyer · DTC</div>
+      <div class="big-num" aria-hidden="true">150M+</div>
+      <h1 class="display"><span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">150 million plus </span>views on ads I made.</h1>
+    </div>
+    <div class="hero-foot">
+      <p>I find the angle, write the hook, make the ad and buy the media.</p>
+      <a class="btn btn-white" href="#work">See the ads</a>
+    </div>
+  </div>
+  <div class="proof">
+    <div class="wrap">
+      <div><b>58M</b><span>views on one ad</span></div>
+      <div><b>$2M+</b><span>ad spend managed</span></div>
+      <div><b>$4M+</b><span>revenue for DTC brands</span></div>
+      <div><b>7 yrs</b><span>of paid social</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="work" class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="display">Selected work</h2>
+      <p>Every ad here ran on <span class="hl">my own budget</span>, mostly for my own brands. That means fewer ads than an agency reel, and no result I didn't pay for. Each one comes with the process behind it.</p>
+    </div>
+
+    <div class="work-list">
+
+      <article class="feature">
+        <div class="feature-top">
+          <!-- VIDEO SLOT: replace this link with <div class="video"><video src="videos/nail-grinder.mp4" controls playsinline preload="metadata" poster="videos/nail-grinder.jpg"></video></div> -->
+          <a class="video" href="https://www.facebook.com/reel/2886174471766171" target="_blank" rel="noopener">
+            <span class="tag">Soft Pet Paws · Reel</span>
+            <span class="q">“Are you trimming your dog's nails right?”</span>
+            <span class="go">Watch the ad ↗</span>
+          </a>
+          <div class="feature-text">
+            <div class="eyebrow">Soft Pet Paws · Dog nail grinder · USA</div>
+            <div class="hook">“Are you trimming your dog's nails right?”</div>
+            <dl class="facts">
+              <dt>Angle</dt><dd>The fear of hurting your dog, instead of the product's features.</dd>
+              <dt>What I did</dt><dd>Reworked my own viral ad: tested new hooks and reordered the scenes.</dd>
+              <dt>Result</dt><dd><span class="hl">3.2× ROAS</span> against 2.1× for the original. Ran for a year.</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="process">
+          <h3>The process behind it</h3>
+          <ol class="steps">
+            <li><span class="k">1. Starting point</span><span class="t">A viral ad with an average return</span><span class="d">The original had 58M views but sat at 2.1× ROAS. People watched it; not enough of them bought.</span></li>
+            <li><span class="k">2. Angle</span><span class="t">Fear of hurting the dog</span><span class="d">Owners weren't doubting the grinder. They were afraid of getting it wrong. The new ad starts there.</span></li>
+            <li><span class="k">3. Structure</span><span class="t">Question, problem, product, action</span><span class="d">Opened on the question, then tested hooks and reordered the scenes until the story held.</span></li>
+            <li><span class="k">4. Result</span><span class="t">3.2× ROAS for a year</span><span class="d">Retired when it fatigued and the audience moved to shorter, faster UGC.</span></li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="feature flip">
+        <div class="feature-top">
+          <!-- VIDEO SLOT: replace this link with <div class="video"><video src="videos/clearsmile.mp4" controls playsinline preload="metadata" poster="videos/clearsmile.jpg"></video></div> -->
+          <a class="video" href="https://www.facebook.com/reel/920887707089011" target="_blank" rel="noopener">
+            <span class="tag">ClearSmile · Creator ad</span>
+            <span class="q">“Does it really work?”</span>
+            <span class="go">Watch the ad ↗</span>
+          </a>
+          <div class="feature-text">
+            <div class="eyebrow">ClearSmile · Teeth whitening · Greece</div>
+            <div class="hook">“Does it really work?”</div>
+            <dl class="facts">
+              <dt>Angle</dt><dd>A skeptic's test, instead of the 50% offer every other ad led with.</dd>
+              <dt>What I did</dt><dd>Audited the account, then put the best-holding visual over the best-selling creator.</dd>
+              <dt>Result</dt><dd><span class="hl">4.86× ROAS</span> and 459 shares. Account ROAS went from 2.68 to 4.84.</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="process">
+          <h3>The process behind it</h3>
+          <ol class="steps">
+            <li><span class="k">1. Audit</span><span class="t">Two ads, strong in opposite places</span><span class="d">The UGC video turned 4.84% of clicks into buyers but only 23% kept watching. The reveal held 54% of viewers and sold half as well.</span></li>
+            <li><span class="k">2. Decision</span><span class="t">Combine them</span><span class="d">Use the reveal to earn the first seconds and a person to make the sale.</span></li>
+            <li><span class="k">3. Brief</span><span class="t">Reveal over the creator's question</span><span class="d">The purple gel reveal plays while she asks “Does it really work?”, then her story continues. No offer line.</span></li>
+            <li><span class="k">4. Result</span><span class="t">4.86× ROAS on $3,003</span><span class="d">Hold rate stayed at 52%, 459 shares, and cost per purchase fell from $11.53 to $6.76.</span></li>
+          </ol>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- AI-CREATED VIDEOS section goes here once the videos are in /videos (design: "Generated, not filmed."). -->
+
+<section id="method" class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <div style="flex:2 1 520px;min-width:0;display:flex;flex-direction:column;gap:16px">
+        <div class="eyebrow">Method</div>
+        <h2 class="display">Winning ads aren't luck. They're a system.</h2>
+      </div>
+      <p>Every brief is a hypothesis about the customer. The account tells me which ones were right.</p>
+    </div>
+    <ol class="cards">
+      <li><span class="n">01</span><span class="t">Customer research</span><span class="d">Reviews, ad comments, support tickets and forums, read for the customer's own words: what they want, what they fear, and what they tried before.</span></li>
+      <li><span class="n">02</span><span class="t">Competitor and category research</span><span class="d">What the category runs in the Ad Library and on TikTok. Ads that stay live for months are working; angles nobody is using are the opening.</span></li>
+      <li><span class="n">03</span><span class="t">Account audit</span><span class="d">Performance read by angle, hook and format, not ad by ad. Hook rate, hold rate, click-through and conversion show where each creative wins and where it leaks.</span></li>
+      <li><span class="n">04</span><span class="t">Angle map</span><span class="d">Personas against angles against awareness stage. It shows what's been tested, what's missing, and what to make next, in priority order.</span></li>
+      <li><span class="n">05</span><span class="t">Briefs built to be tested</span><span class="d">One hypothesis per brief. Three to five hooks on the same body, so a result says which idea won, not which edit.</span></li>
+      <li><span class="n">06</span><span class="t">Test, learn, iterate</span><span class="d">Budgets and kill rules set before launch. Winners get new hooks, formats and creators; every learning goes into a library the next brief starts from.</span></li>
+    </ol>
+    <div class="loop"><b>06 → 01</b><span>Then it starts again. Every round of tests makes the next brief sharper.</span></div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="wrap contact">
+    <div class="eyebrow">Work with me</div>
+    <h2 class="display">Show me your ads.</h2>
+    <p>Tell me about the brand and what's running now. I'll come back with what your best ad is good at, what it's missing, and what I'd make next.</p>
+    <div class="actions">
+      <a class="btn btn-lime" href="mailto:alex.ntasis@hotmail.com">Email me</a>
+      <a class="btn btn-line" href="https://www.linkedin.com/in/alexntas11" target="_blank" rel="noopener">Message me on LinkedIn</a>
+    </div>
+    <div class="addr">alex.ntasis@hotmail.com · Barcelona</div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>Alexandros Ntasis</span><span>Creative strategist · Media buyer · DTC</span></div>
+</footer>
+
+</body>
+</html>
